@@ -2,8 +2,8 @@
   <div id="outPlate">
     <div id="center">
       <div id="left">
-        <article-plate/>
-        <article-plate/>
+        <router-view>
+        </router-view>
       </div>
       <div id="right">
         <div id="LPP">
