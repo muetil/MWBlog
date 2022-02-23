@@ -2,7 +2,7 @@
   <div class="oar" :style="{scale:scale}">
     <div class="ar_back">
     </div>
-    <a :href="href">
+    <a @click.stop="toArticle">
       <div class="ar_title">
         {{ title }}
       </div>
@@ -52,6 +52,15 @@ export default {
     scale:{
       type:Number,
       default:1
+    },
+    aId:{
+      type:String,
+      default:"0"
+    }
+  },
+  methods:{
+    toArticle(){
+      this.$router.push('/article?id='+this.aId)
     }
   }
 }
@@ -142,7 +151,7 @@ a{
 .ar_alt{
   position: absolute;
   top: 20px;
-  height: 410px;
+  height: 100%;
   width: 600px;
   left: 20px;
   z-index: 10;

@@ -1,12 +1,7 @@
 <template>
   <background/>
-  <top-bar />
-<!--  :items="itemList"-->
-  <main-content/>
-<!--  <div id="nav">
-    <router-link to="/">Home</router-link>
-  </div>
-  <router-view/>-->
+  <top-bar :title="'实验项目库'"/>
+  <router-view/>
 </template>
 
 <style>
@@ -17,7 +12,7 @@
 <script>
 import TopBar from "@/components/common/TopBar/TopBar";
 import Background from "@/components/content/Background/Background";
-import MainContent from "@/components/content/MainContent/MainCotent";
+import MainContent from "@/components/content/MainContent/MainContent";
 
 export default {
   data:()=>{

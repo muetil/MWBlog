@@ -1,12 +1,23 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import MainContent from "@/components/content/MainContent/MainContent";
+import ArtList from "@/components/content/ArtList/ArtList";
 
 const routes = [
-  /*{
+  {
    path: '/',
-   name: 'Test',
-   component: Test
- },
- {
+   name: 'Top',
+   component: MainContent,
+   children:[{
+       path:'/',
+       name:'plate',
+       component:ArtList
+   },{
+       path:'article',
+       name:'article',
+       component: ()=>import('@/components/common/ArtPage/ArtPage')
+   }]
+  },
+ /*{
    path: '/',
    name: 'Home',
    component: Home

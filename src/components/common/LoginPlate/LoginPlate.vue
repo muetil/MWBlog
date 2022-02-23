@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import InputBar from "@/components/InputBar/InputBar";
+import InputBar from "@/components/common/InputBar/InputBar";
 export default {
   name: "LoginPlate",
   components: {InputBar},

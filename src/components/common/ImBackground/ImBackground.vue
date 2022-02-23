@@ -45,9 +45,6 @@ export default {
     this.imgPath_1=this.imgPath[1];
     setInterval(()=>{
       this.imgIndex=(this.imgIndex+1)%this.imgNum;
-
-      /*let this.showIndex===0?1:0;
-      this.showIndex=this.showIndex===0?1:0;*/
       if(this.showIndex===0){
         this.imgPath_1=this.imgPath[this.imgIndex];
         this.showIndex=1;
@@ -88,5 +85,6 @@ export default {
   opacity: 0.8;
   background-size: cover;
   background-attachment: fixed;
+  z-index: -999;
 }
 </style>

@@ -32,11 +32,14 @@ export default {
 }
 #inputBar_plate>input{
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 6px;
   border: 0;
   outline: none;
   height: 40px;
+  line-height: 40px;
+  font-size: 16px;
   width: 280px;
   float: left;
+  box-sizing: border-box;
 }
 </style>

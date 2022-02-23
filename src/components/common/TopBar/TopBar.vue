@@ -1,7 +1,7 @@
 <template>
   <div class="topBar">
     <div id="itemList">
-        <a class="item" v-for="item in items" :href="item[1]">
+        <a class="item" v-for="item in items"  @click.stop="toArticle(item[1])">
           {{item[0]}}
         </a>
     </div>
@@ -15,10 +15,14 @@ export default {
     items: {
       default:()=> {
         return[
-          ['首页','/'],
-          ['其它','/']
+          ['首页','/']
         ]
       }
+    }
+  },
+  methods:{
+    toArticle(path){
+      this.$router.push(path)
     }
   }
 
